@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded', () => {\n  const card = document.querySelector('.card');\n  card.addEventListener('click', () => {\n    card.style.transform = card.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)';\n  });\n});

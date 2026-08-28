@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', () => {\n  const card = document.querySelector('.card');\n\n  card.addEventListener('click', async () => {\n    const response = await fetch('/api/message');\n    const data = await response.json();\n    const backFace = document.querySelector('.card__face--back');\n    backFace.innerText = data.message;\n  });\n});
